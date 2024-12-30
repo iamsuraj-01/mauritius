@@ -16,7 +16,7 @@ body {
 
 /* Background Colors */
 .bg-theme {
-  background: #ad854d;
+  background: #987e5a;
 }
 
 .bg-secondary-theme {
@@ -25,7 +25,7 @@ body {
 
 /* Text Colors */
 .text-theme {
-  color: #ad854d;
+  color: #987e5a;
 }
 
 .text-secondary-theme {
@@ -81,8 +81,8 @@ a {
 /* Buttons */
 .btn-theme {
   color: #FFFFFF;
-  background-color: #ad854d;
-  border-color: #ad854d;
+  background-color: #987e5a;
+  border-color: #987e5a;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -105,7 +105,7 @@ a {
 }
 .btn-theme:hover {
   color: #FFFFFF;
-  border-color: #ad854d;
+  border-color: #987e5a;
 }
 
 .btn-square, .btn-sm-square, .btn-lg-square {
@@ -170,7 +170,7 @@ a {
 .spinner {
   width: 40px;
   height: 40px;
-  background: #ad854d;
+  background: #987e5a;
   margin: 100px auto;
   animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
@@ -200,11 +200,6 @@ a {
   opacity: 1;
 }
 
-/* Topbar */
-.navbar-custom-class {
-  height: 45px;
-}
-
 /* Section Title */
 .section-title {
   position: relative;
@@ -217,7 +212,7 @@ a {
   height: 3px;
   bottom: 0;
   left: 0; /* Start from the left */
-  background: #ad854d;
+  background: #987e5a;
   border-radius: 2px;
 }
 .section-title.text-center::before {
@@ -239,7 +234,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ad854d;
+  background-color: #987e5a;
   z-index: -1;
   transition: transform 0.6s ease-in-out;
   transform: translateX(-100%);
@@ -249,7 +244,7 @@ a {
 }
 .hover-theme:hover {
   color: #FFFFFF !important; /* Ensure the text color remains white on hover */
-  border-color: #ad854d;
+  border-color: #987e5a;
 }
 .hover-theme:hover .card-body .card-title, .hover-theme:hover .card-body i {
   color: #FFFFFF !important;
@@ -284,14 +279,14 @@ a {
   transition: 0.5s;
 }
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active {
-  color: #ad854d;
+  color: #987e5a;
 }
 .navbar .navbar-nav .show > .nav-link {
-  color: #ad854d;
+  color: #987e5a;
 }
 .navbar .navbar-toggler {
-  color: #ad854d !important;
-  border-color: #ad854d !important;
+  color: #987e5a !important;
+  border-color: #987e5a !important;
 }
 .navbar .dropdown-menu {
   padding: 0;
@@ -299,19 +294,19 @@ a {
 }
 .navbar .dropdown-menu .dropdown-item {
   transition: background-color 0.3s;
-  border-bottom: 1px solid #ad854d; /* faint border bottom line */
+  border-bottom: 1px solid #987e5a; /* faint border bottom line */
   text-align: center;
   background-color: #171717;
   color: #FFFFFF;
   padding: 10px;
 }
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #ad854d;
+  background-color: #987e5a;
   color: #FFFFFF;
 }
 .navbar .dropdown-menu .dropdown-item.active, .navbar .dropdown-menu .dropdown-item:active {
   color: #FFFFFF;
-  background-color: #ad854d;
+  background-color: #987e5a;
 }
 
 /* Footer */
@@ -331,7 +326,7 @@ a {
   transition: 0.5s;
 }
 .footer .footer-nav .nav-link:hover, .footer .footer-nav .nav-link.active {
-  color: #ad854d;
+  color: #987e5a;
 }
 .footer .logo-footer {
   max-width: 250px;
@@ -390,8 +385,8 @@ a {
   color: #FFFFFF;
 }
 .menu .nav-tabs .nav-link.active {
-  border-bottom: 3px solid #ad854d;
-  color: #ad854d;
+  border-bottom: 3px solid #987e5a;
+  color: #987e5a;
 }
 .menu .card {
   background-color: transparent;
@@ -401,7 +396,7 @@ a {
   border-radius: 0.5rem;
 }
 .menu .card .card-title {
-  color: #ad854d;
+  color: #987e5a;
 }
 
 .parallax-section {
@@ -462,7 +457,7 @@ a {
 }
 .testimonial-carousel .owl-dot.active {
   width: 30px;
-  background: #ad854d;
+  background: #987e5a;
 }
 .testimonial-carousel .owl-item {
   background: #000; /* Set a default background color for all items */
@@ -471,7 +466,7 @@ a {
   color: #fff; /* Ensures text is readable on the dark background */
 }
 .testimonial-carousel .owl-item.center {
-  background: #ad854d !important; /* Highlight the active item with a distinct color */
+  background: #987e5a !important; /* Highlight the active item with a distinct color */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better emphasis */
 }
 .testimonial-carousel .owl-item.center .testimonial-item h4 {
@@ -514,7 +509,7 @@ a {
   font-size: 1.7rem;
   margin-top: 15px;
   margin-bottom: 10px;
-  color: #ad854d;
+  color: #987e5a;
 }
 .service .service-item .service-description {
   font-size: 1rem;
@@ -552,7 +547,7 @@ a {
   font-size: 1.7rem;
   margin-top: 15px;
   margin-bottom: 10px;
-  color: #ad854d;
+  color: #987e5a;
 }
 .features .features-item .features-description {
   font-size: 1rem;
@@ -598,14 +593,14 @@ a {
 }
 .about-page-facts .fact-card .icon {
   font-size: 3rem;
-  color: #ad854d;
+  color: #987e5a;
 }
 .about-page-facts .fact-card h2 {
-  color: #ad854d;
+  color: #987e5a;
   font-weight: bold;
 }
 .about-page-facts .fact-card:hover {
-  background-color: #ad854d;
+  background-color: #987e5a;
   color: #171717;
 }
 .about-page-facts .fact-card:hover .icon {
@@ -643,8 +638,8 @@ a {
 /* Reservation Icons */
 .overlay-icons {
   background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
-  border-left: 2px solid #ad854d;
-  border-right: 2px solid #ad854d;
+  border-left: 2px solid #987e5a;
+  border-right: 2px solid #987e5a;
   padding: 16px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a slight shadow to the text for better readability */
 }
@@ -654,8 +649,8 @@ a {
 
 .overlay-icons-2 {
   background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
-  border-left: 2px solid #ad854d;
-  border-right: 2px solid #ad854d;
+  border-left: 2px solid #987e5a;
+  border-right: 2px solid #987e5a;
   padding: 16px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a slight shadow to the text for better readability */
 }
@@ -697,7 +692,7 @@ a {
   content: "";
   width: 50px;
   height: 2px;
-  background-color: #ad854d;
+  background-color: #987e5a;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -710,7 +705,7 @@ a {
   align-items: center;
 }
 .contact-info .contact-item p i {
-  color: #ad854d;
+  color: #987e5a;
   margin-right: 10px;
 }
 
@@ -845,7 +840,7 @@ a {
     color: #FFFFFF;
   }
   .navbar .btn-transparent {
-    background: #ad854d !important;
+    background: #987e5a !important;
   }
   .about-page-intro .content h2 {
     font-size: 2rem;
