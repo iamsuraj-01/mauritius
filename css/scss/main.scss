@@ -844,6 +844,12 @@ a {
             max-width: 60%;
             height: auto;
         }
+        /* Navbar Link */
+        .navbar-nav {
+            .nav-link {
+                margin-left: 12px;
+            }
+        }
     }
 
     .about-page-intro {

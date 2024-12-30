@@ -737,11 +737,15 @@ a {
   /* Navbar */
   .navbar {
     /* Navbar Brand */
+    /* Navbar Link */
   }
   .navbar .navbar-brand img {
     width: 100px;
     max-width: 60%;
     height: auto;
+  }
+  .navbar .navbar-nav .nav-link {
+    margin-left: 12px;
   }
   .about-page-intro .content h2 {
     font-size: 1.5rem;
