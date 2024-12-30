@@ -14,6 +14,22 @@
     
     // Initiate The wowjs
     new WOW().init();
+
+    // Navbar Toggler
+    const toggler = document.getElementById('navbarToggler');
+    const menuIcon = document.getElementById('menuIcon');
+    
+    // Add a click event listener to the toggler button
+    toggler.addEventListener('click', function() {
+        // Toggle the icon and the visibility of the text
+        if (menuIcon.classList.contains('fa-bars')) {
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-times');
+        } else {
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+        }
+    });
     
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");

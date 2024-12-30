@@ -83,6 +83,7 @@ a {
     border-color: $theme;
     position: relative;
     overflow: hidden;
+    border-radius: 50px;
     z-index: 1;
     transition: color 0.6s ease-in-out, border-color 0.6s ease-in-out; /* Increased duration to 0.6s */
 
@@ -297,9 +298,9 @@ a {
             position: relative;
             margin-left: 25px;
             padding: 35px 0;
-            color: $white;
-            font-size: 20px;
-            font-weight: 600;
+            color: $theme;
+            font-size: 18px;
+            font-weight: 500;
             outline: none;
             transition: .5s;
 
@@ -315,7 +316,10 @@ a {
 
     .navbar-toggler {
         color: $theme !important;
-        border-color: $theme !important;
+        border: none !important;
+        &:focus {
+            box-shadow: none;
+        }
     }
     
     .dropdown-menu {
@@ -398,7 +402,7 @@ a {
 /* Carousel */
 .carousel-item {
     position: relative;
-    min-height: 1100px;
+    min-height: 630px;
   
     img {
       position: absolute;
@@ -412,7 +416,7 @@ a {
   
 /* Hide Carousel Controls */
 .carousel-control-prev, .carousel-control-next {
-    display: block;
+    display: none; /* set property block to display controls */
 }
 
 /* Banner */
@@ -837,7 +841,7 @@ a {
          /* Navbar Brand */
         .navbar-brand img {
             width: 100px;
-            max-width: 100%;
+            max-width: 60%;
             height: auto;
         }
     }
