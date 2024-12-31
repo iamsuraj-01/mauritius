@@ -378,197 +378,225 @@ a {
   margin-bottom: 90px;
 }
 
-/* Menu */
-.menu .nav-tabs .nav-link {
-  background: transparent;
-  color: #FFFFFF;
-  border: none;
-}
-.menu .nav-tabs .nav-link:hover, .menu .nav-tabs .nav-link:focus {
-  border: none;
-  color: #FFFFFF;
-}
-.menu .nav-tabs .nav-link.active {
-  border-bottom: 3px solid #987e5a;
-  color: #987e5a;
-}
-.menu .card {
-  background-color: transparent;
-  border: none;
-}
-.menu .card img {
-  border-radius: 0.5rem;
-}
-.menu .card .card-title {
-  color: #987e5a;
+/* Menu *
+.menu {
+    .nav-tabs .nav-link {
+        background: transparent;
+        color: $white;
+        border: none;
+        &:hover, &:focus {
+            border: none;
+            color: $white;
+        }
+        &.active {
+            border-bottom: 3px solid $theme;
+            color: $theme;
+        }
+    }
+    .card {
+        background-color: transparent;
+        border: none;
+
+        img {
+            border-radius: 0.5rem; // Customizable to match your style
+        }
+
+        .card-title {
+            color: $theme;
+        }
+    }
 }
 
 .parallax-section {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-.parallax-section:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-}
-.parallax-section .container {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.7); // Dark overlay for better text visibility
+    }
+
+    .container {
+      position: relative;
+      z-index: 2; // Ensure text appears above the overlay
+    }
+  }
+
+
+/* Gallery *
+.gallery {
+    .box {
+        width: 350px;
+        overflow: hidden;
+    }
+    .slide-img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
 }
 
-/* Gallery */
-.gallery .box {
-  width: 350px;
-  overflow: hidden;
-}
-.gallery .slide-img {
-  width: 100%;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  box-sizing: border-box;
-}
-
-/* Testimonial Carousel */
-.testimonial-carousel .owl-dots {
-  margin-top: 30px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-.testimonial-carousel .owl-dot {
-  position: relative;
-  display: inline-block;
-  margin: 0 5px;
-  width: 15px;
-  height: 15px;
-  background: #171717;
-  border-radius: 2px;
-  transition: 0.5s;
-}
-.testimonial-carousel .owl-dot.active {
-  width: 30px;
-  background: #987e5a;
-}
-.testimonial-carousel .owl-item {
-  background: #000; /* Set a default background color for all items */
-  padding: 15px; /* Additional padding for better spacing */
-  transition: 0.5s;
-  color: #fff; /* Ensures text is readable on the dark background */
-}
-.testimonial-carousel .owl-item.center {
-  background: #987e5a !important; /* Highlight the active item with a distinct color */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better emphasis */
-}
-.testimonial-carousel .owl-item.center .testimonial-item h4 {
-  color: #FFFFFF !important; /* Change text and stars color specifically for active item */
-}
-.testimonial-carousel .owl-item.center .testimonial-item .fa-star {
-  color: #171717 !important; /* Change text and stars color specifically for active item */
+/* Testimonial Carousel *
+.testimonial-carousel {
+    .owl-dots {
+        margin-top: 30px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .owl-dot {
+        position: relative;
+        display: inline-block;
+        margin: 0 5px;
+        width: 15px;
+        height: 15px;
+        background: $theme-secondary;
+        border-radius: 2px;
+        transition: .5s;
+        &.active {
+            width: 30px;
+            background: $theme;
+        }
+    }
+    .owl-item {
+        background: #000;
+        padding: 15px; 
+        transition: .5s;
+        color: #fff;
+    }
+    .owl-item.center {
+        background: $theme !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    }
+    .owl-item.center .testimonial-item {
+        h4 {
+            color: $white !important; 
+        }
+        .fa-star {
+            color: $dark !important; 
+        }
+    }
 }
 
-/* Adjustments for star spacing */
+/* Adjustments for star spacing *
 .fa-star {
-  margin-right: 4px; /* Adds spacing between the stars */
+    margin-right: 4px; 
 }
 
 .service {
-  padding: 60px 0;
-}
-.service .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.service .service-item {
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.service .service-item:hover {
-  transform: translateY(-5px);
-}
-.service .service-item img {
-  border-radius: 8px;
-  max-width: 100%;
-  height: 220px;
-}
-.service .service-item .service-title {
-  font-size: 1.7rem;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  color: #987e5a;
-}
-.service .service-item .service-description {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: #666666;
-  text-align: center;
-  padding: 5px;
+    padding: 60px 0;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service-item {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: 220px;
+        }
+
+        .service-title {
+            font-size: 1.7rem;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: $theme;
+        }
+
+        .service-description {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #666666;
+            text-align: center;
+            padding: 5px;
+        }
+    }
 }
 
 .features {
-  padding: 60px 0;
-}
-.features .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.features .features-item {
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.features .features-item:hover {
-  transform: translateY(-5px);
-}
-.features .features-item img {
-  border-radius: 8px;
-  max-width: 100%;
-  height: 220px;
-}
-.features .features-item .features-title {
-  font-size: 1.7rem;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  color: #987e5a;
-}
-.features .features-item .features-description {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: #666666;
-  text-align: center;
-  padding: 5px;
+    padding: 60px 0;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .features-item {
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: 220px;
+        }
+
+        .features-title {
+            font-size: 1.7rem;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            color: $theme;
+        }
+
+        .features-description {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: #666666;
+            text-align: center;
+            padding: 5px;
+        }
+    }
 }
 
-.about p {
-  font-size: 17px;
+.about {
+    p {
+        font-size: 17px;
+    }
 }
 
-.staff p {
-  font-size: 1.1rem;
-  padding: 30px;
-  text-align: justify;
+.staff {
+    p {
+        font-size: 1.1rem;
+        padding: 30px;
+        text-align: justify;
+    }
 }
 
 /* About Us Page */

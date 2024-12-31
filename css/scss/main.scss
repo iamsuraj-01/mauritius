@@ -425,7 +425,7 @@ a {
     margin-bottom: 90px;
 }
 
-/* Menu */
+/* Menu *
 .menu {
     .nav-tabs .nav-link {
         background: transparent;
@@ -483,7 +483,7 @@ a {
   }
   
 
-/* Gallery */
+/* Gallery *
 .gallery {
     .box {
         width: 350px;
@@ -497,7 +497,7 @@ a {
     }
 }
 
-/* Testimonial Carousel */
+/* Testimonial Carousel *
 .testimonial-carousel {
     .owl-dots {
         margin-top: 30px;
@@ -520,28 +520,28 @@ a {
         }
     }
     .owl-item {
-        background: #000; /* Set a default background color for all items */
-        padding: 15px; /* Additional padding for better spacing */
+        background: #000;
+        padding: 15px; 
         transition: .5s;
-        color: #fff; /* Ensures text is readable on the dark background */
+        color: #fff;
     }
     .owl-item.center {
-        background: $theme !important; /* Highlight the active item with a distinct color */
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better emphasis */
+        background: $theme !important;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
     }
     .owl-item.center .testimonial-item {
         h4 {
-            color: $white !important; /* Change text and stars color specifically for active item */
+            color: $white !important; 
         }
         .fa-star {
-            color: $dark !important; /* Change text and stars color specifically for active item */
+            color: $dark !important; 
         }
     }
 }
 
-/* Adjustments for star spacing */
+/* Adjustments for star spacing *
 .fa-star {
-    margin-right: 4px; /* Adds spacing between the stars */
+    margin-right: 4px; 
 }
 
 .service {
