@@ -76,6 +76,10 @@ a {
     text-decoration: none;
 }
 
+.border {
+    border: 1px solid $theme !important;
+}
+
 /* Buttons */
 .btn-theme {
     color: $white;
