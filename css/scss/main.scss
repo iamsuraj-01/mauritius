@@ -290,11 +290,13 @@ a {
 /* Navbar */
 .navbar {
     background-color: #222222;
-    .navbar-brand img {
-        width: 100px;
-        height: auto;
-        max-width: 100%;
-        pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
+    .navbar-brand {
+        img {
+            width: 100px;
+            height: auto;
+            max-width: 100%;
+            pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
+        }
     }
 
     .navbar-nav {
@@ -353,51 +355,33 @@ a {
 }
 
 /* Footer */
-.footer {
-
-    .footer-nav {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-
-        .nav-link {
-            position: relative;
-            margin-left: 25px;
-            padding: 35px 0;
-            color: $white;
-            font-size: 18px;
-            font-weight: 600;
-            outline: none;
-            transition: .5s;
-
-            &:hover,
-            &.active {
-                color: $theme;
-            }
-        }
-    }
-
-    .logo-footer {
-        max-width: 250px; // Adjust size as needed
-        height: auto;
-    }
-
+footer {
+    background-color: $theme;
+    color: $white;
+  
     ul {
-        padding: 0;
-        list-style: none;
-
-        li {
-            margin-bottom: 5px;
-        }
+      li {
+        margin-bottom: 0.5rem;
+      }
     }
-
-    h5 {
-        font-weight: bold;
-        margin-bottom: 15px;
+  
+    .footer-link {
+      text-decoration: none;
+      color: $white;
+      transition: all 0.3s ease-in-out;
+  
+      &:hover {
+        color: $theme-secondary;
+        padding-left: 5px;
+      }
     }
-
-    p, ul {
-        margin-bottom: 0;
+  
+    img {
+      max-width: 150px;
+    }
+  
+    h5, ul {
+      text-align: center;
     }
 }
 
@@ -427,6 +411,22 @@ a {
 .banner {
     background-size: cover;
     margin-bottom: 90px;
+}
+
+.web-form {
+    .form-control {
+        background-color: transparent !important;
+        border-radius: 1rem;
+        border: 1px solid #ccc;
+        color: #000;
+        &:focus {
+            box-shadow: none;
+            border-color: $theme;
+        }
+        &::placeholder {
+            color: #EFEFEF;
+        }
+    }
 }
 
 /* Menu *
@@ -843,10 +843,15 @@ a {
     /* Navbar */
     .navbar {
          /* Navbar Brand */
-        .navbar-brand img {
-            width: 100px;
-            max-width: 60%;
-            height: auto;
+        .navbar-brand {
+            img {
+                width: 100px;
+                max-width: 60%;
+                height: auto;
+            }
+            h3 {
+                font-size: 17px;
+            }
         }
         /* Navbar Link */
         .navbar-nav {

@@ -318,41 +318,27 @@ a {
 }
 
 /* Footer */
-.footer .footer-nav {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.footer .footer-nav .nav-link {
-  position: relative;
-  margin-left: 25px;
-  padding: 35px 0;
+footer {
+  background-color: #987e5a;
   color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 600;
-  outline: none;
-  transition: 0.5s;
 }
-.footer .footer-nav .nav-link:hover, .footer .footer-nav .nav-link.active {
-  color: #987e5a;
+footer ul li {
+  margin-bottom: 0.5rem;
 }
-.footer .logo-footer {
-  max-width: 250px;
-  height: auto;
+footer .footer-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
 }
-.footer ul {
-  padding: 0;
-  list-style: none;
+footer .footer-link:hover {
+  color: #171717;
+  padding-left: 5px;
 }
-.footer ul li {
-  margin-bottom: 5px;
+footer img {
+  max-width: 150px;
 }
-.footer h5 {
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-.footer p, .footer ul {
-  margin-bottom: 0;
+footer h5, footer ul {
+  text-align: center;
 }
 
 /* Landing Page Start */
@@ -380,6 +366,23 @@ a {
 .banner {
   background-size: cover;
   margin-bottom: 90px;
+}
+
+.web-form .form-control {
+  background-color: transparent !important;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  color: #000;
+}
+.web-form .form-control:focus {
+  box-shadow: none;
+  border-color: #987e5a;
+}
+.web-form .form-control::-moz-placeholder {
+  color: #EFEFEF;
+}
+.web-form .form-control::placeholder {
+  color: #EFEFEF;
 }
 
 /* Menu *
@@ -775,6 +778,9 @@ a {
     width: 100px;
     max-width: 60%;
     height: auto;
+  }
+  .navbar .navbar-brand h3 {
+    font-size: 17px;
   }
   .navbar .navbar-nav .nav-link {
     margin-left: 12px;
