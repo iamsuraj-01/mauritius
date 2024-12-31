@@ -349,12 +349,6 @@ footer {
     display: none; /* set property block to display controls */
 }
 
-/* Banner */
-.banner {
-    background-size: cover;
-    margin-bottom: 90px;
-}
-
 .web-form {
     .form-control {
         background-color: transparent !important;
@@ -368,6 +362,12 @@ footer {
         &::placeholder {
             color: #EFEFEF;
         }
+    }
+}
+
+.pagination-blog {
+    .card {
+        background-color: transparent!important;
     }
 }
 
