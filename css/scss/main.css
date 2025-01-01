@@ -341,6 +341,105 @@ footer h5, footer ul {
   border-color: #987e5a;
 }
 
+.filter-navbar .nav {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #987e5a;
+  border-radius: 0px;
+  padding: 0;
+  background-color: transparent;
+}
+.filter-navbar .nav .nav-item {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #987e5a;
+  /* Apply hover effect on the entire nav-item (the dropdown) */
+}
+.filter-navbar .nav .nav-item:last-child {
+  border-right: none;
+}
+.filter-navbar .nav .nav-item .nav-link {
+  color: #fff;
+  padding: 0.75rem 1rem;
+  display: block;
+}
+.filter-navbar .nav .nav-item .nav-link .bullet {
+  color: #987e5a;
+  margin-right: 8px;
+}
+.filter-navbar .nav .nav-item .nav-link:hover, .filter-navbar .nav .nav-item .nav-link.dropdown-toggle[aria-expanded=true] {
+  color: #FFFFFF;
+}
+.filter-navbar .nav .nav-item.dropdown:hover {
+  background-color: #987e5a;
+}
+.filter-navbar .nav .nav-item.dropdown:hover .bullet {
+  color: #fff;
+}
+.filter-navbar .nav .nav-item .dropdown-menu {
+  border: 1px solid #987e5a;
+  border-radius: 0px;
+  background-color: transparent;
+  min-width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.filter-navbar .nav .nav-item .dropdown-menu .dropdown-item {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0px;
+  background-color: transparent; /* No background for items on hover */
+}
+.filter-navbar .nav .nav-item .dropdown-menu .dropdown-item input[type=radio] {
+  margin-right: 8px;
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #fff; /* White border for radio button */
+  width: 16px; /* Set a proper size */
+  height: 16px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* Remove default appearance */
+  border-radius: 50%; /* Round radio button */
+  /* When radio is checked, change background */
+}
+.filter-navbar .nav .nav-item .dropdown-menu .dropdown-item input[type=radio]:checked {
+  background-color: #fff; /* White background for active radio button */
+}
+.filter-navbar .nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: transparent; /* No background color for items */
+  color: #FFFFFF;
+}
+.filter-navbar .search-btn {
+  background-color: #b19777;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 0%;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.filter-navbar .search-btn:focus {
+  box-shadow: none;
+}
+.filter-navbar .search-btn i {
+  font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+  .filter-navbar .nav {
+    flex-direction: column;
+  }
+  .filter-navbar .nav .nav-item {
+    border-right: none;
+    border-bottom: 1px solid #b19777;
+  }
+  .filter-navbar .nav .nav-item:last-child {
+    border-bottom: none;
+  }
+}
+
 /* About Us Page */
 .about-page-intro .content h2 {
   font-size: 2.5rem;

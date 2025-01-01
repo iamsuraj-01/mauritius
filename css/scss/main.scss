@@ -382,6 +382,125 @@ footer {
     }
 }
 
+.filter-navbar {
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid $theme;
+      border-radius: 0px;
+      padding: 0;
+      background-color: transparent; // Transparent background
+  
+      .nav-item {
+        flex: 1;
+        text-align: center;
+        border-right: 1px solid $theme;
+  
+        &:last-child {
+          border-right: none;
+        }
+  
+        .nav-link {
+          color: #fff;
+          padding: 0.75rem 1rem;
+          display: block;
+  
+          .bullet {
+            color: $theme;
+            margin-right: 8px;
+          }
+  
+          &:hover,
+          &.dropdown-toggle[aria-expanded="true"] {
+            color: $white;
+          }
+        }
+  
+        /* Apply hover effect on the entire nav-item (the dropdown) */
+        &.dropdown:hover {
+          background-color: $theme; // Light yellow color when hovering over the entire dropdown
+          
+          .bullet {
+            color: #fff; // Change bullet color to white on hover
+          }
+        }
+  
+        .dropdown-menu {
+          border: 1px solid $theme;
+          border-radius: 0px;
+          background-color: transparent; // Transparent dropdown
+          min-width: 100%; // Ensures full width of the dropdown
+          position: absolute; // Fixes the dropdown position
+          top: 100%; // Ensure it appears below the dropdown toggle
+          left: 0;
+  
+          .dropdown-item {
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 0px;
+            background-color: transparent; /* No background for items on hover */
+          
+            input[type="radio"] {
+              margin-right: 8px;
+              background-color: transparent; /* Transparent background */
+              border: 1px solid #fff; /* White border for radio button */
+              width: 16px; /* Set a proper size */
+              height: 16px;
+              appearance: none; /* Remove default appearance */
+              border-radius: 50%; /* Round radio button */
+              
+              /* When radio is checked, change background */
+              &:checked {
+                background-color: #fff; /* White background for active radio button */
+              }
+            }
+          
+            &:hover {
+              background-color: transparent; /* No background color for items */
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  
+    .search-btn {
+      background-color: #b19777;
+      color: $white;
+      border: none;
+      border-radius: 0%;
+      padding: 0.5rem 0.75rem;
+      position: absolute;
+      right: 0px; // Align the button to the right
+      top: 50%;
+      transform: translateY(-50%); // Vertically center the button
+      &:focus {
+        box-shadow: none;
+      }
+  
+      i {
+        font-size: 1.25rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+  
+        .nav-item {
+          border-right: none;
+          border-bottom: 1px solid #b19777;
+  
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+  
+  
+
 /* About Us Page */
 .about-page-intro {
     .content {
