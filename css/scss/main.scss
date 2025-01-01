@@ -74,6 +74,9 @@ body {
 /* Links */
 a {
     text-decoration: none;
+    &:hover {
+        color: $theme;
+    }
 }
 
 .border {
@@ -368,6 +371,14 @@ footer {
 .pagination-blog {
     .card {
         background-color: transparent!important;
+    }
+    hr {
+        color: $theme;
+    }
+    .page-link {
+        background-color: transparent;
+        color: $theme;
+        border-color: $theme;
     }
 }
 

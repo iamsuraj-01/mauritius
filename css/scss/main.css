@@ -77,6 +77,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #987e5a;
+}
 
 .border {
   border: 1px solid #987e5a !important;
@@ -328,6 +331,14 @@ footer h5, footer ul {
 
 .pagination-blog .card {
   background-color: transparent !important;
+}
+.pagination-blog hr {
+  color: #987e5a;
+}
+.pagination-blog .page-link {
+  background-color: transparent;
+  color: #987e5a;
+  border-color: #987e5a;
 }
 
 /* About Us Page */
